@@ -1,0 +1,135 @@
+/*　Copyright 2017 Paalon Studio */
+
+body {
+    background-color: #ffffff;
+    /*background-color: #607c44;*/
+}
+:root {
+    --info_bar_width: 400px;
+}
+@keyframes fadeIn {
+    0% {
+        width: 0px;
+        /*transform: scaleX(0);*/
+        color: rgba(255, 255, 255, .0);
+        background-color: rgba(255, 255, 255, .0);
+
+    }
+    50% {
+        width: var(--info_bar_width);
+        /*transform: scaleX(1);*/
+        color: rgba(255, 255, 255, .0);
+        background-color: rgba(0, 0, 0, .2);
+    }
+    100% {
+        width: var(--info_bar_width);
+        color: #ffffff;
+        background-color: rgba(0, 0, 0, .2);
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        width: var(--info_bar_width);
+        /*transform: scaleX(1);*/
+        color: #ffffff;
+        background-color: rgba(0, 0, 0, .2);
+    }
+    100% {
+        width: 0px;
+        /*transform: scaleX(0);*/
+        color: rgba(255, 255, 255, .0);
+        background-color: rgba(255, 255, 255, .0)
+    }
+}
+
+.center {
+    margin: 0 auto;
+}
+
+#info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*text-align: center;*/
+    /*background-color: orange;*/
+    /*min-height: 1.5em;*/
+    margin-bottom: 8px;
+}
+
+#info_bar {
+    /*display: inline-block;*/
+    border-radius: 16px;
+    animation-fill-mode: forwards;
+    -webkit-animation-duration: 300ms;
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#info_bar p {
+    /*display: table-cell;
+    vertical-align: middle;*/
+    font-family: Verdana, monospace;
+    font-size: 1.5em;
+    white-space: nowrap;
+
+    /*position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;*/
+    /*display: inline-block;*/
+    /*font-family: "verdana", sans-serif;*/
+    /*text-align: center;*/
+    /*min-height: 1.5em;*/
+    /*max-height: 1.5em*/
+    /*border-radius: 16px;*/
+
+    /*animation-fill-mode: forwards;*/
+    /*-webkit-animation-duration: 300ms;*/
+}
+
+#bookmark {
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+.icon {
+  cursor: default;
+}
+.icon::before,
+.icon::after {
+  position: absolute;
+  z-index: -1;
+  display: block;
+  content: '';
+}
+.icon,
+.icon::before,
+.icon::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+
+.icon {
+    padding: 8px 8px 8px 8px;
+    border-radius: 16px;
+}
+.icon:hover {
+  /*background-color: #e0f7d7;*/
+  background-color: rgba(0, 0, 0, .2);
+}

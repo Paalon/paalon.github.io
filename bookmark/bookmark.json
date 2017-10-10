@@ -1,0 +1,71 @@
+[
+    {
+        "name": "Evernote",
+        "url": "https://www.evernote.com/Home.action"
+    },
+    {
+        "name": "Google Inbox",
+        "url": "https://inbox.google.com",
+        "icon_url": "https://ssl.gstatic.com/bt/C3341AA7A1A076756462EE2E5CD71C11/ic_product_inbox_16dp_r2_2x.png"
+    },
+    {
+        "name": "Google Drive",
+        "url": "https://drive.google.com"
+    },
+    {
+        "name": "Google Scholar",
+        "url": "https://scholar.google.com"
+    },
+    {
+        "name": "Weblio Turbo",
+        "url": "https://ejje.weblio.jp/turbo",
+        "icon_url": "http://ejje.weblio.jp/apple-touch-icon.png"
+    },
+    {
+        "name": "Google Calendar",
+        "url": "https://calendar.google.com",
+        "icon_url": "https://productforums.google.com/forum/image/GDF/14669931576069597410/ebb522f1-eace-406a-8c07-127eae258974"
+    },
+    {
+        "name": "Google.com",
+        "url": "https://www.google.com/webhp?gl=us&hl=en&gws_rd=cr&pws=0"
+    },
+    {
+        "name": "Google.co.jp",
+        "url": "https://www.google.co.jp"
+    },
+    {
+        "name": "Twitter",
+        "url": "https://twitter.com/?lang=ja",
+        "icon_url": "https://abs.twimg.com/icons/apple-touch-icon-192x192.png"
+    },
+    {
+        "name": "Google Keep",
+        "url": "https://keep.google.com/u/0/",
+        "icon_url": "https://d1zqayhc1yz6oo.cloudfront.net/08d530078fe24460c994db0320a13a82.png"
+    },
+    {
+        "name": "Dropbox",
+        "url": "https://www.dropbox.com/home",
+        "icon_url": "https://cfl.dropboxstatic.com/static/images/favicon.ico"
+    },
+    {
+        "name": "Humble Bundle",
+        "url": "https://www.humblebundle.com/home/library",
+        "icon_url": "https://humblebundle-a.akamaihd.net/static/hashed/46cf2ed85a0641bfdc052121786440c70da77d75.png"
+    },
+    {
+        "name": "YouTube",
+        "url": "https://www.youtube.com",
+        "icon_url": "https://www.youtube.com/yts/img/favicon_144-vfliLAfaB.png"
+    },
+    {
+        "name": "GitHub",
+        "url": "https://github.com"
+    },
+    {
+        "name": "niconico",
+        "url": "http://www.nicovideo.jp",
+        "icon_url": "https://zigsow.jp/img.php?a=a&filename=zigsow_own_item_186323_1_1332408402.png"
+    }
+]

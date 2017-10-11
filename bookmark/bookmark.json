@@ -67,5 +67,9 @@
         "name": "niconico",
         "url": "http://www.nicovideo.jp",
         "icon_url": "https://zigsow.jp/img.php?a=a&filename=zigsow_own_item_186323_1_1332408402.png"
+    },
+    {
+        "name": "BitBucket",
+        "url": "https://bitbucket.org/dashboard/overview"
     }
 ]

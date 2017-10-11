@@ -57,6 +57,7 @@
   icon_url: https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Play_music_triangle.svg/2000px-Play_music_triangle.svg.png
 - name: IconFinder
   url: https://www.iconfinder.com
+  icon_url: https://cdn0.iconfinder.com/static/img/favicons/favicon-194x194.png?bf2736d2f8eaf890
 - name: Back
   url: ../
   icon_url: https://cdn3.iconfinder.com/data/icons/gray-toolbar-4/512/previous-512.png

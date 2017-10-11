@@ -7,15 +7,14 @@
 const width = 32;
 const height = 32;
 
-const bookmarkPath = './bookmark.yaml';
+const bookmarkPath = './bookmark.json';
 
 let xhr = new XMLHttpRequest();
 xhr.open("GET", bookmarkPath, true);
 xhr.send();
 xhr.onload = function () {
     let bookmarkText = xhr.responseText;
-    let bookmark = jsyaml.load(bookmarkText);
-    // let bookmark = JSON.parse(bookmarkText);
+    let bookmark = JSON.parse(bookmarkText);
     onBookmarkLoaded(bookmark);
 };
 

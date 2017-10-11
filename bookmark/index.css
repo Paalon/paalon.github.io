@@ -1,29 +1,30 @@
 /*　Copyright 2017 Paalon Studio */
 
-body {
-    background-color: #ffffff;
-    /*background-color: #607c44;*/
-}
 :root {
     --info_bar_width: 400px;
+    /*--body_background-color: #607c44;*/
+    --body_background-color: #ffffff;
 }
+
+body {
+    background-color: var(--body_background-color);
+}
+
 @keyframes fadeIn {
     0% {
         width: 0px;
-        /*transform: scaleX(0);*/
         color: rgba(255, 255, 255, .0);
         background-color: rgba(255, 255, 255, .0);
 
     }
     50% {
         width: var(--info_bar_width);
-        /*transform: scaleX(1);*/
         color: rgba(255, 255, 255, .0);
         background-color: rgba(0, 0, 0, .2);
     }
     100% {
         width: var(--info_bar_width);
-        color: #ffffff;
+        color: var(--body_background-color);
         background-color: rgba(0, 0, 0, .2);
     }
 }
@@ -31,13 +32,11 @@ body {
 @keyframes fadeOut {
     0% {
         width: var(--info_bar_width);
-        /*transform: scaleX(1);*/
-        color: #ffffff;
+        color: var(--body_background-color);
         background-color: rgba(0, 0, 0, .2);
     }
     100% {
         width: 0px;
-        /*transform: scaleX(0);*/
         color: rgba(255, 255, 255, .0);
         background-color: rgba(255, 255, 255, .0)
     }
@@ -51,14 +50,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /*text-align: center;*/
     /*background-color: orange;*/
     /*min-height: 1.5em;*/
     margin-bottom: 8px;
 }
 
 #info_bar {
-    /*display: inline-block;*/
     border-radius: 16px;
     animation-fill-mode: forwards;
     -webkit-animation-duration: 300ms;
@@ -69,27 +66,9 @@ body {
 }
 
 #info_bar p {
-    /*display: table-cell;
-    vertical-align: middle;*/
     font-family: Verdana, monospace;
     font-size: 1.5em;
     white-space: nowrap;
-
-    /*position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	margin: auto;*/
-    /*display: inline-block;*/
-    /*font-family: "verdana", sans-serif;*/
-    /*text-align: center;*/
-    /*min-height: 1.5em;*/
-    /*max-height: 1.5em*/
-    /*border-radius: 16px;*/
-
-    /*animation-fill-mode: forwards;*/
-    /*-webkit-animation-duration: 300ms;*/
 }
 
 #bookmark {
@@ -123,7 +102,6 @@ img {
   -webkit-transition: all .3s;
   transition: all .3s;
 }
-
 
 .icon {
     padding: 8px 8px 8px 8px;

@@ -7,17 +7,19 @@
 const width = 32;
 const height = 32;
 
-const bookmarkPath = './bookmark.json';
+const bookmarkPath = './bookmark.yaml';
 
-let xhr = new XMLHttpRequest();
-xhr.open("GET", bookmarkPath, true);
-xhr.send();
-xhr.onload = function () {
-    let bookmarkText = xhr.responseText;
-    let bookmark = JSON.parse(bookmarkText);
-    onBookmarkLoaded(bookmark);
+window.onload = function () {
+    let xhr = new XMLHttpRequest();
+    xhr.open("GET", bookmarkPath, true);
+    xhr.send();
+    xhr.onload = function () {
+        let bookmarkText = xhr.responseText;
+        let bookmark = jsyaml.load(bookmarkText);
+        // let bookmark = JSON.parse(bookmarkText);
+        onBookmarkLoaded(bookmark);
+    };
 };
-
 
 function onBookmarkLoaded(bookmark) {
     let icons_html = [];

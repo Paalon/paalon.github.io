@@ -49,7 +49,7 @@
   url: https://www.nhk.or.jp/radio
 - name: Google Translate
   url: https://translage.google.com
-  icon_url: https://commons.wikimedia.org/wiki/File:Google_Translate_Icon.png
+  icon_url: https://upload.wikimedia.org/wikipedia/commons/d/db/Google_Translate_Icon.png
 - name: 地震速報
   url: https://www.youtube.com/channel/UCyMW-_pfjsTG76c9tP5SErg
 - name: Google Play Music

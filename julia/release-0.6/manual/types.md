@@ -504,7 +504,7 @@ julia> Pointy{Real} <: Pointy{Float64}
 false
 ```
 
-``Pointy{>:Int}`がJuliaにおける**反変**型のアナローグである一方で、`Pointy{<:Real}`はJuliaにおける**共変**型のアナローグの表現するのに使われますが、技術的には、これらの表現は型の**集合**を表します（[UnionAll Types](https://docs.julialang.org/en/latest/manual/types/#UnionAll-Types-1)を見よ）。
+`Pointy{>:Int}`がJuliaにおける**反変**型のアナローグである一方で、`Pointy{<:Real}`はJuliaにおける**共変**型のアナローグの表現するのに使われますが、技術的には、これらの表現は型の**集合**を表します（[UnionAll Types](https://docs.julialang.org/en/latest/manual/types/#UnionAll-Types-1)を見よ）。
 
 ```julia
 julia> Pointy{Float64} <: Pointy{<:Real}

@@ -10,7 +10,6 @@
 
 - [ ] Introduction
 - [ ] Getting Started
-
 - [ ] Variables
 - [ ] Integers and Floating-Point Numbers
 - [ ] Mathematical Operations and Elementary Functions

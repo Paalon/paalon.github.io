@@ -333,11 +333,11 @@ ERROR: TypeError: in typeassert, expected Union{Int64, AbstractString}, got Floa
 
 ## パラメトリック（パラメータ付きの）型 / Parametric Types
 
-Juliaの型システムの重要かつ強力な機能は、パラメトリックであること（パラメータを付けられる）ことです。型はパラメータを取ることができるので、型宣言は実際に新しい型のファミリを導入します。一般的なプログラミングのいくつかのバージョンをサポートする多くの言語があります。これらの言語を操作するデータ構造やアルゴリズムは、正確な型を指定することなく指定できます。たとえば、ML、Haskell、Ada、Eiffel、C ++、Java、C＃、F＃、およびScalaには、いくつかの例を挙げていくつかのジェネリックプログラミングが存在します。これらの言語の中には真のパラメトリック多形性（例えばML、Haskell、Scala）をサポートするものもあれば、テンプレートベースの一般的なプログラミングスタイル（例えばC ++、Java）をサポートするものもあります。さまざまな言語のジェネリックプログラミングとパラメトリックタイプが多種多様であるため、Juliaのパラメトリックタイプを他の言語と比較しようとはしませんが、代わりにJuliaのシステムについて説明することに専念します。しかし、Juliaは動的に型指定された言語であり、コンパイル時にすべての型決定を行う必要がないため、静的パラメトリック型システムで発生する多くの従来の問題は比較的簡単に処理できます。
+Juliaの型システムの重要かつ強力な機能は、パラメトリックであること（パラメータを付けられる）ことです。型はパラメータを取ることができるので、型宣言は実際に新しい型のファミリを導入します。一般的なプログラミングのいくつかのバージョンをサポートする多くの言語があります。これらの言語を操作するデータ構造やアルゴリズムは、正確な型を指定することなく指定できます。例えば、いくつか例を挙げると、MLやHaskell、Ada、Eiffel、C ++、Java、C＃、F＃、Scalaには、ある形でのジェネリックプログラミングができます。これらの言語の中には真のパラメトリック多相性（例えばML、Haskell、Scala）をサポートするものもあれば、テンプレートベースの一般的なプログラミングスタイル（例えばC ++、Java）をサポートするものもあります。さまざまな言語のジェネリックプログラミングとパラメトリックタイプが多種多様であるため、Juliaのパラメトリックタイプを他の言語と比較しようとはしませんが、代わりにJuliaのシステムについて説明することに専念します。しかし、Juliaは動的に型指定された言語であり、コンパイル時にすべての型決定を行う必要がないため、静的パラメトリック型システムで発生する多くの従来の問題は比較的簡単に処理できます。
 
-宣言されたすべての型（DataTypeバラエティ）は、それぞれの場合に同じ構文でパラメータ化できます。最初にパラメトリックコンポジット型、パラメトリック抽象型、パラメトリックプリミティブ型の順に説明します。
+宣言されたすべての型（`DataType`の一種）は、それぞれの場合と同じ構文でパラメータ付けることができます。パラメトリック合成型、パラメトリック抽象型、パラメトリック原始型の順に説明します。
 
-### Parametric 合成型
+### パラメトリック合成型
 
 型パラメータは、中括弧で囲まれた型名の直後に挿入されます。
 
@@ -394,14 +394,14 @@ false
 
 この最後の点は非常に重要です：たとえ`Float64 <: Real`であっても、`Point{Float64} <: Point{Real}`はありません。
 
-言い換えると、型理論の言い回しにおいて、Juliaの型パラメータは、共変（または反変）さえあるのではなく、不変である。これは実用的な理由です：Point {Float64}のインスタンスは、概念的にはPoint {Real}のインスタンスのようなものかもしれませんが、2つのタイプはメモリ内で異なる表現をしています：
+言い換えると、型理論の言い回しにおいて、Juliaの型パラメータは、共変（または反変）さえあるのではなく、不変である。これは実用的な理由です：`Point{Float64}`のインスタンスは、概念的には`Point{Real}`のインスタンスのようなものかもしれませんが、2つのタイプはメモリ内で異なる表現をしています：
 
--   Point {Float64}のインスタンスは、64ビット値の直近のペアとしてコンパクトかつ効率的に表現できます。
--   Point {Real}のインスタンスは、Realのインスタンスのペアを保持できる必要があります。 Realのインスタンスであるオブジェクトは任意のサイズと構造にできるため、実際にはPoint {Real}のインスタンスは個別に割り当てられたRealオブジェクトへのポインタのペアとして表現されなければなりません。
+-   `Point{Float64}`のインスタンスは、64ビット値の直近のペアとしてコンパクトかつ効率的に表現できます。
+-   `Point{Real}`のインスタンスは、`Real`のインスタンスのペアを保持できる必要があります。`Real`のインスタンスであるオブジェクトは任意のサイズと構造にできるため、実際には`Point{Real}`のインスタンスは個別に割り当てられた`Real`オブジェクトへのポインタのペアとして表現されなければなりません。
 
-配列{Float64}は、64ビット浮動小数点値の連続したメモリブロックとして格納することができますが、配列{Float64}は連続した64ビット浮動小数点値のメモリブロックとして格納することができます。 {Real}は、個別に割り当てられたRealオブジェクトへのポインタの配列でなければなりません。これは、ボックス化された64ビット浮動小数点値ですが、Real抽象タイプの実装と宣言されている任意の大きさの複雑なオブジェクトでもかまいません。
+`Array{Float64}`は、64ビット浮動小数点値の連続したメモリブロックとして格納することができますが、`Array{Float64}`は連続した64ビット浮動小数点値のメモリブロックとして格納することができます。 {Real}は、個別に割り当てられた`Real`オブジェクトへのポインタの配列でなければなりません。これは、ボックス化された64ビット浮動小数点値ですが、`Real`抽象タイプの実装と宣言されている任意の大きさの複雑なオブジェクトでもかまいません。
 
-Point {Float64}はPoint {Real}のサブタイプではないので、Point {Float64}型の引数には次のメソッドを適用できません。
+`Point{Float64}`は`Point{Real}`のサブタイプではないので、`Point{Float64}`型の引数には次のメソッドを適用できません。
 
 ```julia
 function norm(p::Point{Real})
@@ -465,7 +465,7 @@ julia> typeof(ans)
 Point{Int64}
 ```
 
-Pointの場合、Pointの2つの引数が同じ型である場合に限り、Tの型は明白に暗示されます。 そうでない場合、コンストラクタはMethodErrorで失敗します：
+`Point`の場合、`Point`の2つの引数が同じ型である場合に限り、`T`の型は明白に暗示されます。 そうでない場合、コンストラクタは`MethodError`で失敗します：
 
 ```julia
 julia> Point(1,2.5)
@@ -476,15 +476,15 @@ Closest candidates are:
 
 そのような混合されたケースを適切に処理するためのコンストラクタメソッドは定義できますが、後でコンストラクタで議論されることはありません。
 
-### Parametric 抽象型
+### パラメトリック抽象型
 
-Parametric abstract type declarations declare a collection of abstract types, in much the same way:
+パラメトリック抽象型の宣言は他と同じように抽象型のコレクションを宣言します：
 
 ```julia
 julia> abstract type Pointy{T} end
 ```
 
-With this declaration, `Pointy{T}` is a distinct abstract type for each type or integer value of `T`. As with parametric composite types, each such instance is a subtype of `Pointy`:
+この宣言では、`Pointy{T}`は各型の異なった抽象型または`T`の整数値です。パラメトリック合成型と一緒だと、そのようなインスタンスはそれぞれ`Pointy`のサブ型です。
 
 ```julia
 julia> Pointy{Int64} <: Pointy
@@ -494,7 +494,7 @@ julia> Pointy{1} <: Pointy
 true
 ```
 
-Parametric abstract types are invariant, much as parametric composite types are:
+パラメトリック抽象型は、パラメトリック合成型と同じように不変です。
 
 ```julia
 julia> Pointy{Float64} <: Pointy{Real}
@@ -504,7 +504,7 @@ julia> Pointy{Real} <: Pointy{Float64}
 false
 ```
 
-The notation `Pointy{<:Real}` can be used to express the Julia analogue of a *covariant* type, while `Pointy{>:Int}` the analogue of a *contravariant* type, but technically these represent *sets* of types (see [UnionAll Types](https://docs.julialang.org/en/latest/manual/types/#UnionAll-Types-1)).
+``Pointy{>:Int}`がJuliaにおける**反変**型のアナローグである一方で、`Pointy{<:Real}`はJuliaにおける**共変**型のアナローグの表現するのに使われますが、技術的には、これらの表現は型の**集合**を表します（[UnionAll Types](https://docs.julialang.org/en/latest/manual/types/#UnionAll-Types-1)を見よ）。
 
 ```julia
 julia> Pointy{Float64} <: Pointy{<:Real}
@@ -598,7 +598,7 @@ end
 
 It only makes sense to take ratios of integer values, so the parameter type `T` is restricted to being a subtype of [`Integer`](https://docs.julialang.org/en/latest/stdlib/numbers/#Core.Integer), and a ratio of integers represents a value on the real number line, so any [`Rational`](https://docs.julialang.org/en/latest/stdlib/numbers/#Base.Rational) is an instance of the [`Real`](https://docs.julialang.org/en/latest/stdlib/numbers/#Core.Real) abstraction.
 
-### [タプル型](https://docs.julialang.org/en/latest/manual/types/#Tuple-Types-1)
+### タプル型
 
 Tuples are an abstraction of the arguments of a function – without the function itself. The salient aspects of a function's arguments are their order and their types. Therefore a tuple type is similar to a parameterized immutable type where each parameter is the type of one field. For example, a 2-element tuple type resembles the following immutable type:
 

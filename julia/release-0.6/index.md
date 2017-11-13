@@ -2,43 +2,44 @@
 
 ## 説明書 / Manual
 
--   はじめに / Introduction
--   始めよう / Getting Started
--   変数 / Variables
--   整数と浮動小数点数 / Integers and Floating-Point Numbers
--   数学的操作と初等関数 / Mathematical Operations and Elementary Functions
--   複素数と有理数 / Complex and Rational Numbers
--   文字列 / Strings
--   関数 / Functions
--   コントロールのながれ / Control Flow
--   変数のスコープ / Scope of Variables
--   [型](./) / Types
--   メソッド / Methods
--   コンストラクタ / Constructors
--   変換と昇進 / Conversion and Promotion
--   インターフェイス / Interfaces
--   モジュール / Modules
--   メタプログラミング / Metaprogramming
--   多次元配列 / Multi-dimensional Arrays
--   線型代数 / Linear Algebra
--   ネットワークとストリーム / Networking and Streams
--   並列計算 / Parallel Computing
--   日付と日付時間 / Date and DateTime
--   外部プログラムを走らせる / Running External Programs
--   CとFortranのコードを呼び出す / Calling C and Fortran Code
--   システム変数の操作 / Handling Operations System Variation
--   環境変数 / Environment Variables
--   Juliaと触れ合う / Interacting With Julia
--   Juliaの埋め込み / Embedding Julia
--   パッケージ / Packages
--   プロファイリング / Profiling
--   スタックトレース / Stack Traces
--   Performance Tips
--   Workflow Tips
--   Style Guide
--   Frequently Asked Questions
--   Noteworthy Differences from other Languages
--   Unicode Input
+-   はじめに / [Introduction](https://docs.julialang.org/en/release-0.6/manual/introduction/#man-introduction-1)
+-   始めよう / [Getting Started](https://docs.julialang.org/en/release-0.6/manual/getting-started/#Getting-Started-1)
+-   変数 / [Variables](https://docs.julialang.org/en/release-0.6/manual/variables/#Variables-1)
+-   整数と浮動小数点数 / [Integers and Floating-Point Numbers](https://docs.julialang.org/en/release-0.6/manual/integers-and-floating-point-numbers/#Integers-and-Floating-Point-Numbers-1)
+-   数学的操作と初等関数 / [Mathematical Operations and Elementary Functions](https://docs.julialang.org/en/release-0.6/manual/mathematical-operations/#Mathematical-Operations-and-Elementary-Functions-1)
+-   複素数と有理数 / [Complex and Rational Numbers](https://docs.julialang.org/en/release-0.6/manual/complex-and-rational-numbers/#Complex-and-Rational-Numbers-1)
+-   文字列 / [Strings](https://docs.julialang.org/en/release-0.6/manual/strings/#man-strings-1)
+-   関数 / [Functions](https://docs.julialang.org/en/release-0.6/manual/functions/#man-functions-1)
+-   コントロールのながれ / [Control Flow](https://docs.julialang.org/en/release-0.6/manual/control-flow/#Control-Flow-1)
+-   変数のスコープ / [Scope of Variables](https://docs.julialang.org/en/release-0.6/manual/variables-and-scoping/#scope-of-variables-1)
+-   [型](./manual/types.md) / [Types](https://docs.julialang.org/en/release-0.6/manual/types/#man-types-1)
+-   メソッド / [Methods](https://docs.julialang.org/en/release-0.6/manual/methods/#Methods-1)
+-   コンストラクタ / [Constructors](https://docs.julialang.org/en/release-0.6/manual/constructors/#man-constructors-1)
+-   変換と昇進 / [Conversion and Promotion](https://docs.julialang.org/en/release-0.6/manual/conversion-and-promotion/#conversion-and-promotion-1)
+-   インターフェイス / [Interfaces](https://docs.julialang.org/en/release-0.6/manual/interfaces/#Interfaces-1)
+-   モジュール / [Modules](https://docs.julialang.org/en/release-0.6/manual/modules/#modules-1)
+-   ドキュメンテーション / [Documentation](https://docs.julialang.org/en/release-0.6/manual/documentation/#Documentation-1)
+-   メタプログラミング / [Metaprogramming](https://docs.julialang.org/en/release-0.6/manual/metaprogramming/#Metaprogramming-1)
+-   多次元配列 / [Multi-dimensional Arrays](https://docs.julialang.org/en/release-0.6/manual/arrays/#man-multi-dim-arrays-1)
+-   線型代数 / [Linear Algebra](https://docs.julialang.org/en/release-0.6/stdlib/linalg/#Linear-Algebra-1)
+-   ネットワークとストリーム / [Networking and Streams](https://docs.julialang.org/en/release-0.6/manual/networking-and-streams/#Networking-and-Streams-1)
+-   並列計算 / [Parallel Computing](https://docs.julialang.org/en/release-0.6/manual/parallel-computing/#Parallel-Computing-1)
+-   日付と日付時間 / [Date and DateTime](https://docs.julialang.org/en/release-0.6/manual/dates/#Date-and-DateTime-1)
+-   外部プログラムを走らせる / [Running External Programs](https://docs.julialang.org/en/release-0.6/manual/running-external-programs/#Running-External-Programs-1)
+-   CとFortranのコードを呼び出す / [Calling C and Fortran Code](https://docs.julialang.org/en/release-0.6/manual/calling-c-and-fortran-code/#Calling-C-and-Fortran-Code-1)
+-   システム変数の操作 / [Handling Operating System Variation](https://docs.julialang.org/en/release-0.6/manual/handling-operating-system-variation/#Handling-Operating-System-Variation-1)
+-   環境変数 / [Environment Variables](https://docs.julialang.org/en/release-0.6/manual/environment-variables/#Environment-Variables-1)
+-   Juliaと触れ合う / [Interacting With Julia](https://docs.julialang.org/en/release-0.6/manual/interacting-with-julia/#Interacting-With-Julia-1)
+-   Juliaの埋め込み / [Embedding Julia](https://docs.julialang.org/en/release-0.6/manual/embedding/#Embedding-Julia-1)
+-   パッケージ / [Packages](https://docs.julialang.org/en/release-0.6/manual/packages/#Packages-1)
+-   プロファイリング / [Profiling](https://docs.julialang.org/en/release-0.6/manual/profile/#Profiling-1)
+-   スタックトレース / [Stack Traces](https://docs.julialang.org/en/release-0.6/manual/stacktraces/#Stack-Traces-1)
+-   [Performance Tips](https://docs.julialang.org/en/release-0.6/manual/performance-tips/#man-performance-tips-1)
+-   [Workflow Tips](https://docs.julialang.org/en/release-0.6/manual/workflow-tips/#man-workflow-tips-1)
+-   [Style Guide](https://docs.julialang.org/en/release-0.6/manual/style-guide/#Style-Guide-1)
+-   [Frequently Asked Questions](https://docs.julialang.org/en/release-0.6/manual/faq/#Frequently-Asked-Questions-1)
+-   [Noteworthy Differences from other Languages](https://docs.julialang.org/en/release-0.6/manual/noteworthy-differences/#Noteworthy-Differences-from-other-Languages-1)
+-   [Unicode Input](https://docs.julialang.org/en/release-0.6/manual/unicode-input/#Unicode-Input-1)
 
 ## 標準ライブラリ / [Standard Library](https://docs.julialang.org/en/release-0.6/#Standard-Library-1)
 

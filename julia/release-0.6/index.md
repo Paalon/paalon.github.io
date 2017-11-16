@@ -34,12 +34,12 @@
 -   パッケージ / [Packages](https://docs.julialang.org/en/release-0.6/manual/packages/#Packages-1)
 -   プロファイリング / [Profiling](https://docs.julialang.org/en/release-0.6/manual/profile/#Profiling-1)
 -   スタックトレース / [Stack Traces](https://docs.julialang.org/en/release-0.6/manual/stacktraces/#Stack-Traces-1)
--   [Performance Tips](https://docs.julialang.org/en/release-0.6/manual/performance-tips/#man-performance-tips-1)
--   [Workflow Tips](https://docs.julialang.org/en/release-0.6/manual/workflow-tips/#man-workflow-tips-1)
--   [Style Guide](https://docs.julialang.org/en/release-0.6/manual/style-guide/#Style-Guide-1)
--   [Frequently Asked Questions](https://docs.julialang.org/en/release-0.6/manual/faq/#Frequently-Asked-Questions-1)
--   [Noteworthy Differences from other Languages](https://docs.julialang.org/en/release-0.6/manual/noteworthy-differences/#Noteworthy-Differences-from-other-Languages-1)
--   [Unicode Input](https://docs.julialang.org/en/release-0.6/manual/unicode-input/#Unicode-Input-1)
+-   パフォーマンスのコツ / [Performance Tips](https://docs.julialang.org/en/release-0.6/manual/performance-tips/#man-performance-tips-1)
+-   ワークフローのコツ / [Workflow Tips](https://docs.julialang.org/en/release-0.6/manual/workflow-tips/#man-workflow-tips-1)
+-   スタイルガイド / [Style Guide](https://docs.julialang.org/en/release-0.6/manual/style-guide/#Style-Guide-1)
+-   よく聞かれる質問 / [Frequently Asked Questions](https://docs.julialang.org/en/release-0.6/manual/faq/#Frequently-Asked-Questions-1)
+-   他の言語から来た人のための知っておくと良い違い / [Noteworthy Differences from other Languages](https://docs.julialang.org/en/release-0.6/manual/noteworthy-differences/#Noteworthy-Differences-from-other-Languages-1)
+-   Unicode入力 / [Unicode Input](https://docs.julialang.org/en/release-0.6/manual/unicode-input/#Unicode-Input-1)
 
 ## 標準ライブラリ / [Standard Library](https://docs.julialang.org/en/release-0.6/#Standard-Library-1)
 

@@ -1,6 +1,6 @@
 # Julia Documentation 日本語版
 
-プログラミング言語Juliaの説明書の日本語版。
+プログラミング言語 Julia のドキュメンテーションの日本語訳。
 
 2017/11/13における[https://docs.julialang.org/en/latest/manual/types/](https://docs.julialang.org/en/latest/manual/types/)の和訳。
 
@@ -8,7 +8,17 @@
 
 [index.html](./index.html)
 
+上のリンクから見れる。
+
 ## 進捗状況
+
+Juliaのドキュメンテーションは
+
+-   Manual
+-   Standard Library
+-   Developer Documentaion
+
+に分かれている。まずManualを優先して翻訳する。
 
 ###  Manual
 
@@ -22,18 +32,18 @@
 - [ ] Functions
 - [ ] Control Flow
 - [ ] Scope of Variables
-- [x] Types
+- [x] [Types](./manual/types.md)
 - [ ] Methods
 - [ ] Constructors
 - [ ] Conversion and Promotion
 - [ ] Interfaces
-- [x] Modules
+- [x] [Modules](./manual/modules.md)
 - [ ] Documentation
 - [ ] Metaprogramming
 - [ ] Multi-dimensional Arrays
 - [ ] Linear Algebra
 - [ ] Networking and Streams
-- [x] Parallel Computing
+- [x] [Parallel Computing](./manual/parallel_computing.md)
 - [ ] Date and DateTime
 - [ ] Running External Programs
 - [ ] Calling C and Fortran Code

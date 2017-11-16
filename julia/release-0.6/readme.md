@@ -4,6 +4,10 @@
 
 2017/11/13における[https://docs.julialang.org/en/latest/manual/types/](https://docs.julialang.org/en/latest/manual/types/)の和訳。
 
+[index.md](./index.md)
+
+[index.html](./index.html)
+
 ## 進捗状況
 
 ###  Manual
@@ -23,13 +27,13 @@
 - [ ] Constructors
 - [ ] Conversion and Promotion
 - [ ] Interfaces
-- [ ] Modules
+- [x] Modules
 - [ ] Documentation
 - [ ] Metaprogramming
 - [ ] Multi-dimensional Arrays
 - [ ] Linear Algebra
 - [ ] Networking and Streams
-- [ ] Parallel Computing
+- [x] Parallel Computing
 - [ ] Date and DateTime
 - [ ] Running External Programs
 - [ ] Calling C and Fortran Code

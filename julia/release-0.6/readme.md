@@ -51,7 +51,7 @@ Juliaのドキュメンテーションは
 - [ ] Environment Variables
 - [ ] Interacting With Julia
 - [ ] Embedding Julia
-- [ ] Packages
+- [x] [Packages](./manual/packages.md)
 - [ ] Profiling
 - [ ] Stack Traces
 - [ ] Performance Tips

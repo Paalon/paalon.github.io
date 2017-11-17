@@ -31,7 +31,7 @@
 -   環境変数 / [Environment Variables](https://docs.julialang.org/en/release-0.6/manual/environment-variables/#Environment-Variables-1)
 -   Juliaと触れ合う / [Interacting With Julia](https://docs.julialang.org/en/release-0.6/manual/interacting-with-julia/#Interacting-With-Julia-1)
 -   Juliaの埋め込み / [Embedding Julia](https://docs.julialang.org/en/release-0.6/manual/embedding/#Embedding-Julia-1)
--   パッケージ / [Packages](https://docs.julialang.org/en/release-0.6/manual/packages/#Packages-1)
+-   [パッケージ](./manual/packages.md) / [Packages](https://docs.julialang.org/en/release-0.6/manual/packages/#Packages-1)
 -   プロファイリング / [Profiling](https://docs.julialang.org/en/release-0.6/manual/profile/#Profiling-1)
 -   スタックトレース / [Stack Traces](https://docs.julialang.org/en/release-0.6/manual/stacktraces/#Stack-Traces-1)
 -   パフォーマンスのコツ / [Performance Tips](https://docs.julialang.org/en/release-0.6/manual/performance-tips/#man-performance-tips-1)

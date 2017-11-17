@@ -43,7 +43,7 @@ Juliaのドキュメンテーションは
 - [ ] Multi-dimensional Arrays
 - [ ] Linear Algebra
 - [ ] Networking and Streams
-- [x] [Parallel Computing](./manual/parallel_computing.md)
+- [x] [Parallel Computing](./manual/parallel-computing.md)
 - [ ] Date and DateTime
 - [ ] Running External Programs
 - [ ] Calling C and Fortran Code

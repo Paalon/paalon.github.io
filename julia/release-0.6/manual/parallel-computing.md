@@ -45,3 +45,37 @@ julia -p <n> -L file1.jl -L file2.jl driver.jl
 ```
 
 Juliaのプロセスは
+
+## コードの可用性とパッケージの読み込み
+
+```julia
+julia> function rand2(dims...)
+           return 2*rand(dims...)
+       end
+
+julia> rand2(2,2)
+2×2 Array{Float64,2}:
+ 0.153756  0.368514
+ 1.15119   0.918912
+
+julia> fetch(@spawn rand2(2,2))
+ERROR: RemoteException(2, CapturedException(UndefVarError(Symbol("#rand2"))
+Stacktrace:
+[...]
+```
+
+プロセス１は関数`rand2`について知っていますが、プロセス２は関数`rand2`について知っていません。
+
+## Data Movement
+
+## Global variables
+
+## Network Requirements for LocalManager and SSHManager
+
+## Cluster Cookie
+
+## ネットワークのトポロジーを指定する（実験段階）
+
+## マルチスレッディング（実験段階）
+
+## @threadcall（実験段階）

@@ -58,6 +58,14 @@
 - name: IconFinder
   url: https://www.iconfinder.com
   icon_url: https://cdn0.iconfinder.com/static/img/favicons/favicon-194x194.png?bf2736d2f8eaf890
+- name: Julia Docs
+  url: https://docs.julialang.org/en/stable/
+- name: Nim docs
+  url: https://nim-lang.org/documentation.html
+- name: Julia Forum
+  url: https://discourse.julialang.org/
+- name: Nim Forum
+  url: https://forum.nim-lang.org/
 - name: Back
   url: ../
   icon_url: http://downloadicons.net/sites/default/files/green-back-button-icon-65921.png

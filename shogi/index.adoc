@@ -1,4 +1,5 @@
 = 将棋
+:source-highlighter: highlight.js
 
 USI プロトコル対応の GUI
 

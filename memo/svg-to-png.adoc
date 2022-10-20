@@ -1,0 +1,14 @@
+= SVG を PNG に変換する
+:source-highlighter: highlight.js
+
+ImageMagick の `convert` だと失敗する SVG ファイルがあるので調べていたら、`librsvg` を直接呼べばいいらしい。
+
+[source, sh]
+----
+brew install librsvg
+rsvg-convert --format=png --output=image.png image.svg
+----
+
+https://en.wikipedia.org/wiki/Librsvg[Wikipedia] に使い方は書いてあった。
+
+2020年03月24日

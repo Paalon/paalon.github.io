@@ -1,0 +1,7 @@
+= Koki Fushimi
+
+メモとかを適当においてます。
+
+* link:shogi/index.html[将棋]
+* link:bookmark/index.html[ブックマーク]
+* link:memo/index.html[備忘録]

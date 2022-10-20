@@ -1,0 +1,36 @@
+= 将棋
+
+USI プロトコル対応の GUI
+
+* http://shogidokoro.starfree.jp/[将棋所] Windows, macOS
+* https://sunfish-shogi.github.io/electron-shogi/[Electron将棋] Windows, macOS, Linux など
+
+macOS で将棋エンジンを GUI に登録し使う場合、普通 GUI は `launchd` により起動され、環境変数は
+
+[source, sh]
+----
+sudo launchctl config user path <設定したいPATH情報>
+----
+
+などとして設定しておかないといけない。
+`$HOME/.bash_profile` などで設定されたものは反映されない。
+macOS v12.6 (Monterey) のデフォルトだと`/usr/bin:/bin:/usr/sbin:/sbin` となっている。
+`/usr/local/bin` を追加するために
+
+[source, sh]
+----
+sudo launchctl config user path /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbi
+----
+
+としておくと、`#!/usr/bin/env hogehoge` が利くようになる。
+
+https://qiita.com/homu-konamilk/items/5886f3e48ffa658f4f78
+
+将棋所Mac v2.1.0 について、実行ファイルがテキストファイルの場合、shebang を無視してシェルスクリプトとして解釈されるようなので、エンジンのパスが `$ENGINE_PATH/engine` ならば、`$ENGINE_PATH/engine-for-shogidokoro` に
+
+[source, sh]
+----
+$ENGINE_PATH/engine
+----
+
+と書かれたテキストファイルを作成しこれをエンジン登録する必要がある。

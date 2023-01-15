@@ -1,0 +1,33 @@
+= いろんな言語で Hello World
+:source-highlighter: highlight.js
+
+[source, c]
+----
+#include <stdio.h>
+int main() {
+    printf("こんにちは！\n");
+}
+----
+
+[source, c++]
+----
+#include <iostream>
+int main() {
+    std::cout << "こんにちは！" << std::endl;
+}
+----
+
+[source, javascript]
+----
+console.log("こんにちは！");
+----
+
+[source, julia]
+----
+println("こんにちは！")
+----
+
+[source, python]
+----
+print("こんにちは！")
+----

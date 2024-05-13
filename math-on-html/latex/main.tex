@@ -1,5 +1,6 @@
 \documentclass{article}
 \usepackage{amsfonts}
+\usepackage{amsmath}
 \begin{document}
 \section*{LaTeX}
 \subsection*{Sample text}
@@ -14,4 +15,12 @@ When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are
 \]
 \subsection*{general linear Lie group of \(\mathbb{R}\)}
 \[\mathfrak{gl}_n(\mathbb{R})\]
+\subsection*{Rotation matrix}
+\[
+	\begin{pmatrix}
+		\sin \theta \cos \varphi & \sin \theta \sin \varphi & \cos \theta \\
+		\cos \theta \cos \varphi & \cos \theta \sin \varphi & - \sin \theta \\
+		- \sin \varphi & \cos \varphi & 0
+	\end{pmatrix}
+\]
 \end{document}

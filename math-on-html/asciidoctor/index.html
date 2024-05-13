@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 2.0.22">
+<title>Asciidoctor</title>
+<style>
+@font-face {
+	font-family: "New Computer Modern 10";
+	src: url("../fonts/NewCM10-Regular.otf");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "New Computer Modern 10";
+	src: url("../fonts/NewCM10-Italic.otf");
+	font-weight: normal;
+	font-style: italic;
+}
+@font-face {
+	font-family: "New Computer Modern 10";
+	src: url("../fonts/NewCM10-Bold.otf");
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: "New Computer Modern 10";
+	src: url("../fonts/NewCM10-BoldItalic.otf");
+	font-weight: bold;
+	font-style: italic;
+}
+html {
+	font-family: "New Computer Modern 10";
+}
+
+</style>
+</head>
+<body class="article">
+<div id="header">
+<h1>Asciidoctor</h1>
+</div>
+<div id="content">
+<div class="sect1">
+<h2 id="_sample_text">Sample text</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are</p>
+</div>
+<div class="stemblock">
+<div class="content">
+\[x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}.\]
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_curl_of_a_vector_field">Curl of a Vector Field</h2>
+<div class="sectionbody">
+<div class="stemblock">
+<div class="content">
+\[\vec{\nabla} \times \vec{F}
+= \left( \frac{\partial F_z}{\partial y} - \frac{\partial F_y}{\partial z} \right) \mathbf{i}
++ \left( \frac{\partial F_x}{\partial z} - \frac{\partial F_z}{\partial x} \right) \mathbf{j}
++ \left( \frac{\partial F_y}{\partial x} - \frac{\partial F_x}{\partial y} \right) \mathbf{k}\]
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_general_linear_lie_algebra_of_mathbbr">general linear Lie algebra of \(\mathbb{R}\)</h2>
+<div class="sectionbody">
+<div class="stemblock">
+<div class="content">
+\[\mathfrak{gl}_n(\mathbb{R})\]
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_rotation_matrix">Rotation matrix</h2>
+<div class="sectionbody">
+<div class="stemblock">
+<div class="content">
+\[\begin{pmatrix}
+	\sin \theta \cos \varphi &amp; \sin \theta \sin \varphi &amp; \cos \theta \\
+	\cos \theta \cos \varphi &amp; \cos \theta \sin \varphi &amp; - \sin \theta \\
+	- \sin \varphi &amp; \cos \varphi &amp; 0
+\end{pmatrix}\]
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+</div>
+</div>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  messageStyle: "none",
+  tex2jax: {
+    inlineMath: [["\\(", "\\)"]],
+    displayMath: [["\\[", "\\]"]],
+    ignoreClass: "nostem|nolatexmath"
+  },
+  asciimath2jax: {
+    delimiters: [["\\$", "\\$"]],
+    ignoreClass: "nostem|noasciimath"
+  },
+  TeX: { equationNumbers: { autoNumber: "none" } }
+})
+MathJax.Hub.Register.StartupHook("AsciiMath Jax Ready", function () {
+  MathJax.InputJax.AsciiMath.postfilterHooks.Add(function (data, node) {
+    if ((node = data.script.parentNode) && (node = node.parentNode) && node.classList.contains("stemblock")) {
+      data.math.root.display = "block"
+    }
+    return data
+  })
+})
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_HTMLorMML"></script>
+</body>
+</html>

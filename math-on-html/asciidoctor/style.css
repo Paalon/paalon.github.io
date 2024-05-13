@@ -1,0 +1,27 @@
+@font-face {
+	font-family: "New Computer Modern 10";
+	src: url("../fonts/NewCM10-Regular.otf");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "New Computer Modern 10";
+	src: url("../fonts/NewCM10-Italic.otf");
+	font-weight: normal;
+	font-style: italic;
+}
+@font-face {
+	font-family: "New Computer Modern 10";
+	src: url("../fonts/NewCM10-Bold.otf");
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: "New Computer Modern 10";
+	src: url("../fonts/NewCM10-BoldItalic.otf");
+	font-weight: bold;
+	font-style: italic;
+}
+html {
+	font-family: "New Computer Modern 10";
+}

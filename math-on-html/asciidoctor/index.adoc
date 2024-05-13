@@ -1,0 +1,39 @@
+= Asciidoctor
+:stem: latexmath
+:last-update-label!:
+
+== Sample text
+
+When stem:[a \ne 0], there are two solutions to stem:[ax^2 + bx + c = 0] and they are
+[stem]
+++++
+x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}.
+++++
+
+== Curl of a Vector Field
+
+[stem]
+++++
+\vec{\nabla} \times \vec{F}
+= \left( \frac{\partial F_z}{\partial y} - \frac{\partial F_y}{\partial z} \right) \mathbf{i}
++ \left( \frac{\partial F_x}{\partial z} - \frac{\partial F_z}{\partial x} \right) \mathbf{j}
++ \left( \frac{\partial F_y}{\partial x} - \frac{\partial F_x}{\partial y} \right) \mathbf{k}
+++++
+
+== general linear Lie algebra of stem:[\mathbb{R}]
+
+[stem]
+++++
+\mathfrak{gl}_n(\mathbb{R})
+++++
+
+== Rotation matrix
+
+[stem]
+++++
+\begin{pmatrix}
+	\sin \theta \cos \varphi & \sin \theta \sin \varphi & \cos \theta \\
+	\cos \theta \cos \varphi & \cos \theta \sin \varphi & - \sin \theta \\
+	- \sin \varphi & \cos \varphi & 0
+\end{pmatrix}
+++++

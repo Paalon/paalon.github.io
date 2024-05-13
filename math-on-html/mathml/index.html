@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>MathML</title>
+		<style>
+			@font-face {
+				font-family: "New Computer Modern 10";
+				src: url("../fonts/NewCM10-Regular.otf");
+				font-weight: normal;
+				font-style: normal;
+			}
+			@font-face {
+				font-family: "New Computer Modern 10";
+				src: url("../fonts/NewCM10-Italic.otf");
+				font-weight: normal;
+				font-style: italic;
+			}
+			@font-face {
+				font-family: "New Computer Modern 10";
+				src: url("../fonts/NewCM10-Bold.otf");
+				font-weight: bold;
+				font-style: normal;
+			}
+			@font-face {
+				font-family: "New Computer Modern 10";
+				src: url("../fonts/NewCM10-BoldItalic.otf");
+				font-weight: bold;
+				font-style: italic;
+			}
+			@font-face {
+				font-family: "New Computer Modern Math";
+				src: url("../fonts/NewCMMath-Regular.otf");
+			}
+			html {
+				font-family: "New Computer Modern 10";
+			}
+			math {
+				font-family: "New Computer Modern Math";
+			}
+		</style>
+	</head>
+	<body>
+		<h1>MathML on HTML</h1>
+		<section>
+			<h2>Sample text</h2>
+			<p>
+				When <math><mi>a</mi><mo>≠</mo><mrow><mn>0</mn></math>,
+				there are two solutions to <math><mi>a</mi><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>b</mi><mi>x</mi><mo>+</mo><mi>c</mi><mo>=</mo><mn>0</mn></math> and they are
+				<math display="block">
+					<mi>x</mi>
+					<mo>=</mo>
+					<mfrac>
+						<mrow>
+							<mo form="prefix" stretchy="false" lspace="0em" rspace="0em">−</mo>
+							<mi>b</mi>
+							<mo>±</mo>
+							<msqrt>
+								<msup><mi>b</mi><mn>2</mn></msup>
+								<mo>−</mo>
+								<mn>4</mn><mi>a</mi><mi>c</mi>
+							</msqrt>
+						</mrow>
+						<mrow><mn>2</mn><mi>a</mi></mrow>
+					</mfrac>
+					<mi>.</mi>
+				</math>
+			</p>
+		</section>
+		<section>
+			<h2>Curl of a Vector Field</h2>
+			<math display="block">
+				<mover><mo>∇</mo><mo>→</mo></mover>
+				<mo>×</mo>
+				<mover><mi>F</mi><mo>→</mo></mover>
+				<mo>=</mo>
+				<mrow>
+					<mo>(</mo>
+					<mfrac>
+						<mrow><mi>∂</mi><msub><mi>F</mi><mi>z</mi></msub></mrow>
+						<mrow><mi>∂</mi><mi>y</mi></mrow>
+					</mfrac>
+					<mo>−</mo>
+					<mfrac>
+						<mrow><mi>∂</mi><msub><mi>F</mi><mi>y</mi></msub></mrow>
+						<mrow><mi>∂</mi><mi>z</mi></mrow>
+					</mfrac>
+					<mo>)</mo>
+				</mrow>
+				<mi>𝐢</mi>
+				<mo>+</mo>
+				<mrow>
+					<mo>(</mo>
+					<mfrac>
+						<mrow><mi>∂</mi><msub><mi>F</mi><mi>x</mi></msub></mrow>
+						<mrow><mi>∂</mi><mi>z</mi></mrow>
+					</mfrac>
+					<mo>−</mo>
+					<mfrac>
+						<mrow><mi>∂</mi><msub><mi>F</mi><mi>z</mi></msub></mrow>
+						<mrow><mi>∂</mi><mi>x</mi></mrow>
+					</mfrac>
+					<mo>)</mo>
+				</mrow>
+				<mi>𝐣</mi>
+				<mo>+</mo>
+				<mrow>
+					<mo>(</mo>
+					<mfrac>
+						<mrow><mi>∂</mi><msub><mi>F</mi><mi>y</mi></msub></mrow>
+						<mrow><mi>∂</mi><mi>x</mi></mrow>
+					</mfrac>
+					<mo>−</mo>
+					<mfrac>
+						<mrow><mi>∂</mi><msub><mi>F</mi><mi>x</mi></msub></mrow>
+						<mrow><mi>∂</mi><mi>y</mi></mrow>
+					</mfrac>
+					<mo>)</mo>
+				</mrow>
+				<mi>𝐤</mi>
+			</math>
+		</section>
+		<section>
+			<h2>general linear Lie algebra of <math><mi>ℝ</mi></math></h2>
+			<math display="block">
+				<msub><mi>𝔤𝔩</mi><mi>n</mi></msub>
+				<mo>(</mo><mi>ℝ</mi><mo>)</mo>
+			</math>
+		</section>
+		<section>
+			<h2>Rotation matrix</h2>
+			<math display="block">
+				<mrow>
+				<mo>(</mo>
+				<mtable columnalign="center center center">
+					<mtr>
+						<mtd><mi>sin</mi><mo>&ApplyFunction;</mo><mi>θ</mi><mi>cos</mi><mo>&ApplyFunction;</mo><mi>φ</mi></mtd>
+						<mtd><mi>sin</mi><mo>&ApplyFunction;</mo><mi>θ</mi><mi>sin</mi><mo>&ApplyFunction;</mo><mi>φ</mi></mtd>
+						<mtd><mi>cos</mi><mo>&ApplyFunction;</mo><mi>θ</mi></mtd>
+					</mtr>
+					<mtr>
+						<mtd><mi>cos</mi><mo>&ApplyFunction;</mo><mi>θ</mi><mi>cos</mi><mo>&ApplyFunction;</mo><mi>φ</mi></mtd>
+						<mtd><mi>cos</mi><mo>&ApplyFunction;</mo><mi>θ</mi><mi>sin</mi><mo>&ApplyFunction;</mo><mi>φ</mi></mtd>
+						<mtd><mo>−</mo><mi>sin</mi><mo>&ApplyFunction;</mo><mi>θ</mi></mtd>
+					</mtr>
+					<mtr>
+						<mtd><mo>−</mo><mi>sin</mi><mo>&ApplyFunction;</mo><mi>φ</mi></mtd>
+						<mtd><mi>cos</mi><mo>&ApplyFunction;</mo><mi>φ</mi></mtd>
+						<mtd><mn>0</mn></mtd>
+					</mtr>
+				</mtable>
+				<mo>)</mo>
+				</mrow>
+			</math>
+		</section>
+	</body>
+</html>
